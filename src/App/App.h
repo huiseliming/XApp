@@ -19,6 +19,8 @@ public:
 public:
   virtual int Run(int argc = 0, char *argv[] = nullptr);
 
+  virtual void Tick();
+
 protected:
   virtual bool Init();
   virtual void Loop();

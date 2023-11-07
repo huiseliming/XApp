@@ -41,6 +41,13 @@ int CApp::Run(int argc, char *argv[]) {
   return ExitCode;
 }
 
+void CApp::Tick() {
+    if (Renderer)
+    {
+        Renderer->GetImGuiLayer()->DrawFrame();
+    }
+}
+
 bool CApp::Init() {
   SPDLOG_TRACE("");
   InitRendererType();
@@ -76,12 +83,10 @@ void CApp::Loop() {
       static_cast<CVKRenderer *>(Renderer)->RebuildSwapchain();
     }
     Renderer->GetImGuiLayer()->NewFrame();
-
-    Renderer->GetImGuiLayer()->DrawFrame();
-    // TODO: thread event
+    Tick();
     Renderer->Render();
   } else {
-    // TODO: thread event
+    Tick();
   }
 }
 
