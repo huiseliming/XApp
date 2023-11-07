@@ -16,7 +16,7 @@ cmake_minimum_required(VERSION 3.26)
 # set(CMAKE_CXX_COMPILER "zig.exe c++")
 # windows config vcpkg
 
-project(ImApp)
+project(XApp)
 
 # not supported 32 bit machine
 if("${CMAKE_SIZEOF_VOID_P}" STREQUAL "4")
