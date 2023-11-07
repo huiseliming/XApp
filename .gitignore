@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+*.zip
+.cache
+build
+src/Renderer/imgui-1.89.8-docking
+src/AngelScript/sdk
