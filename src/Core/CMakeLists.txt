@@ -30,9 +30,6 @@ target_link_libraries(${CURRENT_MODULE_NAME} PUBLIC cxxopts::cxxopts)
 # stb
 find_package(Stb REQUIRED)
 target_include_directories(${CURRENT_MODULE_NAME} PUBLIC ${Stb_INCLUDE_DIR})
-# glfw
-find_package(glfw3 CONFIG REQUIRED)
-target_link_libraries(${CURRENT_MODULE_NAME} PRIVATE glfw)
 # glm
 find_package(glm CONFIG REQUIRED)
 target_link_libraries(${CURRENT_MODULE_NAME} PUBLIC glm::glm)

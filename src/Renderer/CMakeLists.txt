@@ -33,6 +33,7 @@ source_group(
   ${IMGUI_DOCKING_DIR}/backends/imgui_impl_glfw.cpp
   ${IMGUI_DOCKING_DIR}/backends/imgui_impl_opengl3.cpp
   ${IMGUI_DOCKING_DIR}/backends/imgui_impl_vulkan.cpp
+  ${IMGUI_DOCKING_DIR}/misc/cpp/imgui_stdlib.cpp
 )
 # library target 
 add_library(${CURRENT_MODULE_NAME} SHARED ${${CURRENT_MODULE_NAME}_HEADERS} ${${CURRENT_MODULE_NAME}_SOURCES} ${${CURRENT_MODULE_NAME}_IMPL_HEADERS} ${${CURRENT_MODULE_NAME}_IMPL_SOURCES}
@@ -44,6 +45,7 @@ add_library(${CURRENT_MODULE_NAME} SHARED ${${CURRENT_MODULE_NAME}_HEADERS} ${${
   ${IMGUI_DOCKING_DIR}/backends/imgui_impl_glfw.cpp
   ${IMGUI_DOCKING_DIR}/backends/imgui_impl_opengl3.cpp
   ${IMGUI_DOCKING_DIR}/backends/imgui_impl_vulkan.cpp
+  ${IMGUI_DOCKING_DIR}/misc/cpp/imgui_stdlib.cpp
 )
 # include directories
 target_include_directories(${CURRENT_MODULE_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../ ${IMGUI_DOCKING_DIR})

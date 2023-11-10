@@ -14,8 +14,8 @@ void CVKImGuiLayer::Init(GLFWwindow *main_window, IRenderer *renderer) {
   IO.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;
   IO.ConfigFlags |= ImGuiConfigFlags_DockingEnable;
   IO.ConfigFlags |= ImGuiConfigFlags_ViewportsEnable;
-  IO.ConfigFlags |= ImGuiConfigFlags_DpiEnableScaleViewports;
-  IO.ConfigFlags |= ImGuiConfigFlags_DpiEnableScaleFonts;
+  //IO.ConfigFlags |= ImGuiConfigFlags_DpiEnableScaleViewports;
+  //IO.ConfigFlags |= ImGuiConfigFlags_DpiEnableScaleFonts;
 
   ImGui::StyleColorsLight();
 

@@ -13,8 +13,8 @@ void CGLImGuiLayer::Init(GLFWwindow *main_window, IRenderer *renderer) {
   io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;
   io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;
   io.ConfigFlags |= ImGuiConfigFlags_ViewportsEnable;
-  io.ConfigFlags |= ImGuiConfigFlags_DpiEnableScaleViewports;
-  io.ConfigFlags |= ImGuiConfigFlags_DpiEnableScaleFonts;
+  //io.ConfigFlags |= ImGuiConfigFlags_DpiEnableScaleViewports;
+  //io.ConfigFlags |= ImGuiConfigFlags_DpiEnableScaleFonts;
 
   ImGui::StyleColorsDark();
   ImGui_ImplGlfw_InitForOpenGL(MainWindow, true);
